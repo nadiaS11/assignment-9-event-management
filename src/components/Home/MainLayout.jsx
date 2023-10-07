@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Home from "./Home";
 import { Outlet } from "react-router-dom";
 import Header from "./../LayoutComponents/Header";
+import Footer from "./../LayoutComponents/Footer";
 
 const MainLayout = (props) => {
   return (
@@ -10,6 +10,7 @@ const MainLayout = (props) => {
       <Header></Header>
       <div className="h-screen">
         <Outlet></Outlet>
+        <Footer></Footer>
       </div>
     </div>
   );

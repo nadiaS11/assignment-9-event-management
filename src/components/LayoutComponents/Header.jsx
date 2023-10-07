@@ -29,8 +29,8 @@ const Header = () => {
             <NavLink
               className={({ isActive }) =>
                 isActive
-                  ? "   bg-sky-800 btn text-white  font-bold"
-                  : "   btn  font-bold"
+                  ? "  btn       font-bold"
+                  : "    text-white font-bold btn-ghost btn"
               }
               to={"/"}
             >
@@ -39,8 +39,8 @@ const Header = () => {
             <NavLink
               className={({ isActive }) =>
                 isActive
-                  ? "   bg-sky-800 btn  text-white  font-bold"
-                  : "    btn font-bold"
+                  ? "    text-white  font-bold   btn"
+                  : "    text-white font-bold btn-ghost btn"
               }
               to={"/services"}
             >
@@ -49,8 +49,8 @@ const Header = () => {
             <NavLink
               className={({ isActive }) =>
                 isActive
-                  ? "   bg-sky-800 btn  text-white  font-bold"
-                  : "    btn font-bold"
+                  ? "     btn    font-bold"
+                  : " text-white     font-bold btn-ghost btn"
               }
               to={"/blog"}
             >
@@ -62,8 +62,8 @@ const Header = () => {
           <NavLink
             className={({ isActive }) =>
               isActive
-                ? "   bg-sky-800 btn  text-white  font-bold"
-                : "    btn font-bold "
+                ? "     btn  text-white  font-bold"
+                : "  text-white   border-white  btn-ghost btn font-bold "
             }
             to={"/login"}
           >
