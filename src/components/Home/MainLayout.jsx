@@ -4,12 +4,14 @@ import { Outlet } from "react-router-dom";
 import Header from "./../LayoutComponents/Header";
 import Footer from "./../LayoutComponents/Footer";
 
-const MainLayout = (props) => {
+const MainLayout = () => {
   return (
     <div className=" ">
       <Header></Header>
-      <div className="h-screen">
-        <Outlet></Outlet>
+      <div>
+        <div className="min-h-screen">
+          <Outlet></Outlet>
+        </div>
         <Footer></Footer>
       </div>
     </div>
