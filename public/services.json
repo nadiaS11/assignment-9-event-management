@@ -1,0 +1,295 @@
+[
+  {
+    "id": 1,
+    "name": "Tech Conference Management",
+    "image": "https://i.ibb.co/bB66BYc/tech-conf.jpg",
+    "price": "$2,000",
+    "short_description": "Full-service management for tech conferences, including venue booking, speaker coordination, and marketing.",
+    "key_features": [
+      "Venue selection and booking",
+      "Expert speaker coordination",
+      "Comprehensive marketing strategy",
+      "Logistics and event coordination",
+      "Attendee registration and support"
+    ],
+    "client_testimonials": [
+      {
+        "author": "John Doe",
+        "author_img": "https://i.ibb.co/L8mm9dJ/author1.jpg",
+        "comment": "The Tech Conference Management team made our event a grand success! Their attention to detail and expert coordination were remarkable."
+      },
+      {
+        "author": "Jane Smith",
+        "author_img": "https://i.ibb.co/C8ZRyK4/author2.jpg",
+
+        "comment": "Highly recommended! They helped us secure an amazing venue and brought in top-notch speakers. It was a fantastic experience."
+      }
+    ],
+    "service_benefits": [
+      "Streamlined conference planning process",
+      "Increased attendee engagement and satisfaction",
+      "Maximized event ROI through effective marketing",
+      "Stress-free event execution",
+      "Customized solutions to meet your conference goals"
+    ],
+    "faq": [
+      {
+        "question": "How do you select conference venues?",
+        "answer": "We consider your event requirements and preferences to identify suitable venues. Our extensive network allows us to secure the best locations."
+      },
+      {
+        "question": "Can you help us with virtual conferences?",
+        "answer": "Yes, we offer expertise in organizing both physical and virtual tech conferences, tailoring our services to your specific needs."
+      },
+      {
+        "question": "What is your cancellation policy?",
+        "answer": "Our cancellation policy varies depending on the stage of the event planning process. We can provide detailed information upon consultation."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Gaming Convention Organization",
+    "image": "https://i.ibb.co/9ybPJJB/gaming-con.jpg",
+    "price": "$1,500",
+    "short_description": "Planning and execution of gaming conventions, featuring tournaments, cosplay events, and more.",
+    "key_features": [
+      "Tournament organization",
+      "Cosplay event planning",
+      "Vendor and exhibitor coordination",
+      "Participant registration and support",
+      "Marketing to gaming enthusiasts"
+    ],
+    "client_testimonials": [
+      {
+        "author": "Mark Johnson",
+        "author_img": "https://i.ibb.co/L8mm9dJ/author1.jpg",
+
+        "comment": "The Gaming Convention Organization team made our event unforgettable! They managed everything flawlessly, from tournaments to cosplay."
+      },
+      {
+        "author": "Sarah Lee",
+        "author_img": "https://i.ibb.co/C8ZRyK4/author2.jpg",
+
+        "comment": "As a vendor, I had a fantastic experience. The convention was well-organized, and I had great interaction with attendees."
+      }
+    ],
+    "service_benefits": [
+      "Engaging gaming enthusiasts and communities",
+      "Unique cosplay and tournament experiences",
+      "Exposure to a wide gaming audience",
+      "Professional event management",
+      "Tailored solutions for gaming conventions"
+    ],
+    "faq": [
+      {
+        "question": "How do you attract gaming enthusiasts to the convention?",
+        "answer": "We utilize targeted marketing strategies, collaborate with gaming influencers, and create engaging content to attract enthusiasts."
+      },
+      {
+        "question": "Do you provide equipment for tournaments?",
+        "answer": "Yes, we can arrange for gaming equipment and tournament setups based on your requirements."
+      },
+      {
+        "question": "What safety measures do you have in place for cosplay events?",
+        "answer": "We prioritize safety with costume guidelines and experienced staff to ensure a secure and enjoyable experience."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Hackathon Event Services",
+    "image": "https://i.ibb.co/hsWC37C/hacka.jpg",
+    "price": "$1,200",
+    "short_description": "End-to-end support for hackathons, from ideation to logistics, to encourage tech innovation.",
+    "key_features": [
+      "Hackathon ideation and theme selection",
+      "Participant registration and team formation",
+      "Technical and logistical support",
+      "Expert mentoring and judging",
+      "Post-event follow-up and analysis"
+    ],
+    "client_testimonials": [
+      {
+        "author": "Alex Patel",
+        "author_img": "https://i.ibb.co/L8mm9dJ/author1.jpg",
+
+        "comment": "Hackathon Event Services exceeded our expectations! Their support, from idea generation to execution, was instrumental in our success."
+      },
+      {
+        "author": "Emily Chen",
+        "author_img": "https://i.ibb.co/C8ZRyK4/author2.jpg",
+
+        "comment": "The hackathon was a huge hit! The team's mentorship and logistics management made it a smooth and productive event."
+      }
+    ],
+    "service_benefits": [
+      "Fostering tech innovation and creativity",
+      "Efficient organization and logistics",
+      "Access to a network of industry experts",
+      "Valuable insights for post-event improvement",
+      "Customized hackathon solutions"
+    ],
+    "faq": [
+      {
+        "question": "How do you select hackathon themes?",
+        "answer": "We work closely with you to identify themes that align with your goals and interests, ensuring engaging challenges for participants."
+      },
+      {
+        "question": "Can you assist with virtual hackathons?",
+        "answer": "Yes, we have experience in organizing both physical and virtual hackathons, adapting our services to your needs."
+      },
+      {
+        "question": "What post-event analysis do you provide?",
+        "answer": "We offer detailed insights into participant feedback, project outcomes, and recommendations for future hackathons."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Startup Expo Management",
+    "image": "https://i.ibb.co/FwV7Fjg/startup.jpg",
+    "price": "$1,800",
+    "short_description": "Expo services for startups, showcasing their products and innovations at tech expos.",
+    "key_features": [
+      "Exhibition booth setup and design",
+      "Attendee engagement strategies",
+      "Promotional materials and branding",
+      "Networking opportunities",
+      "Post-expo follow-up support"
+    ],
+    "client_testimonials": [
+      {
+        "author": "Lisa Rodriguez",
+        "author_img": "https://i.ibb.co/C8ZRyK4/author2.jpg",
+
+        "comment": "Startup Expo Management exceeded our expectations! They showcased our products effectively, and we made valuable connections."
+      },
+      {
+        "author": "David Kim",
+        "author_img": "https://i.ibb.co/L8mm9dJ/author1.jpg",
+
+        "comment": "As a startup, we couldn't have asked for a better expo experience. Their attention to detail and marketing efforts were outstanding."
+      }
+    ],
+    "service_benefits": [
+      "Increased startup visibility and exposure",
+      "Direct interaction with potential investors and customers",
+      "Professional booth design and setup",
+      "Follow-up support to capitalize on leads",
+      "Customized expo solutions"
+    ],
+    "faq": [
+      {
+        "question": "How do you design exhibition booths?",
+        "answer": "We work closely with startups to create eye-catching booth designs that reflect their brand and highlight their products."
+      },
+      {
+        "question": "What post-expo support do you provide?",
+        "answer": "We assist in follow-up activities, including lead management and strategies to capitalize on expo connections."
+      },
+      {
+        "question": "Do you handle booth logistics and setup?",
+        "answer": "Yes, we take care of all booth logistics, from setup to dismantling, allowing startups to focus on networking."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Virtual Tech Webinars",
+    "image": "https://i.ibb.co/4tMd1wJ/webiner.jpg",
+    "price": "$500",
+    "short_description": "Organization of virtual tech webinars with expert speakers and interactive sessions.",
+    "key_features": [
+      "Speaker selection and coordination",
+      "Webinar platform setup",
+      "Interactive session facilitation",
+      "Audience engagement strategies",
+      "Post-webinar analytics"
+    ],
+    "client_testimonials": [
+      {
+        "author": "Michael Johnson",
+        "author_img": "https://i.ibb.co/L8mm9dJ/author1.jpg",
+
+        "comment": "The Virtual Tech Webinars were informative and engaging! The team's tech expertise and webinar execution were top-notch."
+      },
+      {
+        "author": "Jessica Smith",
+        "author_img": "https://i.ibb.co/C8ZRyK4/author2.jpg",
+
+        "comment": "Attending their webinars was a valuable learning experience. They create a dynamic and interactive online environment."
+      }
+    ],
+    "service_benefits": [
+      "Knowledge sharing with industry experts",
+      "Interactive and engaging webinar experiences",
+      "Seamless webinar platform setup",
+      "Data-driven insights for future webinars",
+      "Customized webinar solutions"
+    ],
+    "faq": [
+      {
+        "question": "How do you select webinar topics and speakers?",
+        "answer": "We collaborate with you to identify relevant topics and select experienced speakers who can deliver valuable insights."
+      },
+      {
+        "question": "What webinar platforms do you use?",
+        "answer": "We work with various webinar platforms, including popular options like Zoom, Webex, and others, based on your preferences."
+      },
+      {
+        "question": "Can you handle post-webinar analysis?",
+        "answer": "Yes, we provide detailed analytics and feedback to help you understand the impact of your webinars and make improvements."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Tech Product Launch Events",
+    "image": "https://i.ibb.co/DtSKpGs/product-con.jpg",
+    "price": "$1,500",
+    "short_description": "Planning and execution of tech product launch events to create buzz and engagement.",
+    "key_features": [
+      "Product launch strategy development",
+      "Event logistics and setup",
+      "Audience engagement activities",
+      "Media and influencer outreach",
+      "Post-launch follow-up support"
+    ],
+    "client_testimonials": [
+      {
+        "author": "Karen Brown",
+        "author_img": "https://i.ibb.co/L8mm9dJ/author1.jpg",
+
+        "comment": "The Tech Product Launch Events team made our product launch a huge success! Their marketing strategies and event execution were superb."
+      },
+      {
+        "author": "Samara Clark",
+        "author_img": "https://i.ibb.co/C8ZRyK4/author2.jpg",
+
+        "comment": "The buzz they created around our product launch was amazing. Their team's creativity and dedication shone through."
+      }
+    ],
+    "service_benefits": [
+      "Successful product launches with maximum impact",
+      "Engaged and enthusiastic product launch audiences",
+      "Comprehensive event logistics and support",
+      "Media and influencer exposure",
+      "Customized product launch solutions"
+    ],
+    "faq": [
+      {
+        "question": "How do you create buzz for product launches?",
+        "answer": "We use a combination of marketing, PR, and engagement strategies to generate excitement and anticipation for your product."
+      },
+      {
+        "question": "Do you handle media outreach?",
+        "answer": "Yes, we have experience in reaching out to relevant media outlets and influencers to cover your product launch."
+      },
+      {
+        "question": "What post-launch support do you offer?",
+        "answer": "We assist in follow-up activities, including customer inquiries, feedback analysis, and strategies for post-launch success."
+      }
+    ]
+  }
+]
