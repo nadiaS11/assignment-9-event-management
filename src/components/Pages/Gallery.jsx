@@ -31,6 +31,21 @@ const Gallery = () => {
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={"2"}
+        // breakpoints={{
+        //   // Responsive breakpoints
+        //   576: {
+        //     slidesPerView: 1,
+        //     // spaceBetween: 20,
+        //   },
+        //   992: {
+        //     slidesPerView: 2,
+        //     // spaceBetween: 30,
+        //   },
+        //   1600: {
+        //     slidesPerView: 3,
+        //     // spaceBetween: 40,
+        //   },
+        // }}
         coverflowEffect={{
           rotate: 50,
           stretch: 0,
@@ -46,36 +61,14 @@ const Gallery = () => {
       >
         {imageData?.map((image) => (
           <SwiperSlide key={image.id}>
-            <img className="w-[800px] h-[50vh]" src={image.image} alt="" />
+            <img
+              className="w-full mx-auto h-[50vh] md:h-[60vh]"
+              src={image.image}
+              alt=""
+            />
           </SwiperSlide>
         ))}
       </Swiper>
-      {/* <Swiper
-        style={{
-          "--swiper-navigation-color": "#fff",
-          "--swiper-pagination-color": "#fff",
-        }}
-        spaceBetween={10}
-        navigation={true}
-        thumbs={{ swiper: thumbsSwiper }}
-        modules={[FreeMode, Navigation, Thumbs]}
-        className="mySwiper2"
-      >
-        {imageData?.map((image) => (
-          <SwiperSlide key={image.id}>
-            <div
-              style={{
-                backgroundImage: `url( ${image.image})`,
-                backgroundRepeat: "no-repeat",
-                height: "60vh",
-                backgroundPosition: "center",
-                backgroundSize: "cover",
-              }}
-              className="rounded  flex flex-col justify-end items-center mt-10 bg-blend-overlay bg-[#a89d84be] "
-            ></div>
-          </SwiperSlide>
-        ))}
-      </Swiper> */}
     </div>
   );
 };

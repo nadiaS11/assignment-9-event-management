@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "John Smith",
+    "image": "https://i.ibb.co/L8mm9dJ/author1.jpg",
+    "title": "AI Research Scientist",
+    "company": "Tech Innovators Inc.",
+    "bio": "John Smith is a leading AI research scientist with a passion for pushing the boundaries of artificial intelligence and machine learning. He has delivered keynote speeches at numerous tech conferences worldwide."
+  },
+  {
+    "id": 2,
+    "name": "Sarah Johnson",
+    "image": "https://i.ibb.co/C8ZRyK4/author2.jpg",
+    "title": "Cybersecurity Expert",
+    "company": "SecureTech Solutions",
+    "bio": "Sarah Johnson is a renowned cybersecurity expert with extensive experience in protecting organizations from cyber threats. She has been a featured speaker at cybersecurity conferences globally."
+  },
+  {
+    "id": 3,
+    "name": "Emily Chen",
+    "image": "https://i.ibb.co/YjhqYZh/girl2.jpg",
+    "title": "Blockchain Innovator",
+    "company": "ChainTech Labs",
+    "bio": "Emily Chen is a visionary blockchain innovator who has contributed to groundbreaking blockchain projects. She is a sought-after speaker at blockchain and fintech events."
+  },
+  {
+    "id": 4,
+    "name": "David Kim",
+    "image": "https://i.ibb.co/N6t8L2F/men2.jpg",
+    "title": "Data Science Guru",
+    "company": "Data Insights Co.",
+    "bio": "David Kim is a data science guru with expertise in deriving actionable insights from data. He has presented data-driven solutions at various data science conferences."
+  },
+  {
+    "id": 5,
+    "name": "Linda Rodriguez",
+    "image": "https://i.ibb.co/bHj9sJz/girl3.jpg",
+    "title": "UX/UI Design Expert",
+    "company": "DesignMasters Studio",
+    "bio": "Linda Rodriguez is a leading UX/UI design expert known for creating user-centric designs. She has shared her design insights at design and UX conferences."
+  },
+  {
+    "id": 6,
+    "name": "Michael Jackson",
+    "image": "https://i.ibb.co/RpR51K9/men3.jpg",
+    "title": "Software Engineer",
+    "company": "CodeCrafters Inc.",
+    "bio": "Michael Jackson is a software engineer specializing in web and mobile app development. He has contributed to open-source projects and spoken at tech meetups and conferences."
+  }
+]

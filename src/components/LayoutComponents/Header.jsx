@@ -58,9 +58,9 @@ const Header = () => {
                   ? "     btn    font-bold"
                   : " md:text-white     font-bold btn-ghost btn"
               }
-              to={"/blog"}
+              to={"/speakers"}
             >
-              Blog
+              Our Speakers
             </NavLink>
           </ul>
         </div>

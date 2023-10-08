@@ -8,6 +8,7 @@ import LogIn from "../Pages/Login";
 import ServiceDetails from "../Private/ServiceDetails";
 import PrivateRoute from "../Private/PrivateRoute";
 import Gallery from "../Pages/Gallery";
+import OurSpeakers from "../Private/OurSpeakers";
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,15 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoute>
             <Gallery></Gallery>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/speakers",
+        loader: () => fetch("/speakers.json"),
+        element: (
+          <PrivateRoute>
+            <OurSpeakers></OurSpeakers>
           </PrivateRoute>
         ),
       },
