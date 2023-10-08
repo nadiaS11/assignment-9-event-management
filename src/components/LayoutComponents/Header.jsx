@@ -1,7 +1,13 @@
 import { NavLink } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { AuthContext } from "../Authentications/AuthProvider";
 const Header = () => {
+  const { user, loading, logOut } = useContext(AuthContext);
+
+  const handleLogOut = () => {
+    logOut();
+  };
   const [open, setOpen] = useState(false);
   return (
     <div className=" relative z-40 bg-black">
@@ -59,16 +65,30 @@ const Header = () => {
           </ul>
         </div>
         <div className="order-3">
-          <NavLink
-            className={({ isActive }) =>
-              isActive
-                ? "     btn  text-white  font-bold"
-                : "  text-white   border-white  btn-ghost btn font-bold "
-            }
-            to={"/login"}
-          >
-            Log In
-          </NavLink>
+          {!user && !loading ? (
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? "     btn    font-bold"
+                  : "  text-white   border-white  btn-ghost btn font-bold "
+              }
+              to={"/login"}
+            >
+              Log In
+            </NavLink>
+          ) : (
+            <NavLink
+              onClick={handleLogOut}
+              to={"/login"}
+              className={({ isActive }) =>
+                isActive
+                  ? "     btn     font-bold"
+                  : "  text-white   border-white  btn-ghost btn font-bold "
+              }
+            >
+              Log Out
+            </NavLink>
+          )}
         </div>
       </nav>
     </div>
