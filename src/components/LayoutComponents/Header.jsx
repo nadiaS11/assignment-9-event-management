@@ -26,7 +26,7 @@ const Header = () => {
             className="md:hidden font-medium text-7xl mr-2 "
           ></IoMenu>
           <ul
-            className={`absolute left-2  grid text-right duration-100 z-50   ${
+            className={`absolute left-2 grid text-right duration-100 z-50   ${
               open
                 ? "top-32 bg-base-200 md:bg-none rounded space-y-2"
                 : "-top-60"
@@ -35,8 +35,8 @@ const Header = () => {
             <NavLink
               className={({ isActive }) =>
                 isActive
-                  ? "  btn       font-bold"
-                  : "    text-white font-bold btn-ghost btn"
+                  ? "  btn font-bold"
+                  : "    md:text-white font-bold btn-ghost btn"
               }
               to={"/"}
             >
@@ -45,18 +45,18 @@ const Header = () => {
             <NavLink
               className={({ isActive }) =>
                 isActive
-                  ? "    text-white  font-bold   btn"
-                  : "    text-white font-bold btn-ghost btn"
+                  ? "    text-black  font-bold   btn"
+                  : "    md:text-white font-bold btn-ghost btn"
               }
-              to={"/services"}
+              to={"/gallery"}
             >
-              Services
+              Gallery
             </NavLink>
             <NavLink
               className={({ isActive }) =>
                 isActive
                   ? "     btn    font-bold"
-                  : " text-white     font-bold btn-ghost btn"
+                  : " md:text-white     font-bold btn-ghost btn"
               }
               to={"/blog"}
             >
