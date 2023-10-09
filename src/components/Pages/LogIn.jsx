@@ -6,7 +6,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const LogIn = () => {
-  const { loginUser } = useContext(AuthContext);
+  const { loginUser, googleLogin } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -94,12 +94,20 @@ const LogIn = () => {
                     Forgot password?
                   </Link>
                 </div>
-                <button
-                  type="submit"
-                  className="w-full text-white bg-gray-900 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center  "
-                >
-                  Sign in
-                </button>
+                <div className="flex flex-col gap-5">
+                  <button
+                    type="submit"
+                    className="w-full text-white bg-gray-900 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center  "
+                  >
+                    Sign in
+                  </button>
+                  <button
+                    onClick={googleLogin}
+                    className="text-gray-900 border border-gray-900 hover:bg-gray-400 hover:text-white focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center "
+                  >
+                    Sign In With Google
+                  </button>
+                </div>
                 <p className="text-sm font-light text-gray-500 dark:text-gray-400 py-6">
                   Don’t have an account yet?
                   <Link

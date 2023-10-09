@@ -7,7 +7,7 @@ import { updateProfile } from "firebase/auth";
 
 const Register = () => {
   const navigate = useNavigate();
-  const { createUser } = useContext(AuthContext);
+  const { createUser, googleLogin } = useContext(AuthContext);
 
   const handleRegister = (e) => {
     e.preventDefault();
@@ -144,13 +144,21 @@ const Register = () => {
                     </a>
                   </label>
                 </div>
-                <button
-                  type="submit"
-                  className="text-white bg-gray-900 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center "
-                >
-                  Register new account
-                </button>
-                <div></div>
+
+                <div className="flex gap-5 flex-col">
+                  <button
+                    type="submit"
+                    className="text-white bg-gray-900 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center "
+                  >
+                    Register new account
+                  </button>
+                  <button
+                    onClick={googleLogin}
+                    className="text-gray-900 border border-gray-900 hover:bg-gray-400 hover:text-white focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center "
+                  >
+                    Sign Up With Google
+                  </button>
+                </div>
                 <p className="text-sm font-light text-gray-500 dark:text-gray-400 py-6">
                   Already have an account yet?
                   <Link

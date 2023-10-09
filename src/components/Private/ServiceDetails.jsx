@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 import { Link, useLoaderData, useParams } from "react-router-dom";
+import TestimonialCard from "../Home/TestimonialCard";
 const ServiceDetails = () => {
   const services = useLoaderData();
   const { id } = useParams();
@@ -102,14 +103,20 @@ const ServiceDetails = () => {
                 </div>
               ))}
             </div>
-            <Link
-              to={"/contact"}
-              className="  flex items-center justify-center bg-gray-800 hover:bg-gray-700 p-8 text-md font-semibold text-gray-300 uppercase mt-8"
-            >
+            <Link className="  flex items-center justify-center bg-gray-800 hover:bg-gray-700 p-8 text-md font-semibold text-gray-300 uppercase mt-8">
               <span>Contact sales</span>
               <span className="font-medium text-gray-300 ml-2">➔</span>
             </Link>
           </div>
+        </div>
+      </div>
+      <div>
+        <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+          <h2 className="text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+            Don't trust us. Hear from our clients
+          </h2>
+
+          <TestimonialCard service={service}></TestimonialCard>
         </div>
       </div>
     </div>

@@ -88,14 +88,16 @@ const Header = () => {
                 src={user?.photoURL ? user.photoURL : "/user.png"}
                 alt=""
               />
-              <div>
+              <div className="">
                 <h4 className="text-white  btn-ghost btn font-bold ">
                   {user?.displayName ? user.displayName : ""}
                 </h4>
                 <h4
                   onClick={() => setProfileLogOut(!profileLogOut)}
                   className={`${
-                    profileLogOut ? "absolute top-20" : " absolute -top-60"
+                    profileLogOut
+                      ? "absolute top-20 right-2"
+                      : "  absolute -top-60"
                   }`}
                 >
                   {" "}
@@ -105,7 +107,7 @@ const Header = () => {
                     className={({ isActive }) =>
                       isActive
                         ? "     btn     font-bold"
-                        : "  text-white   border-white  btn-ghost btn font-bold text-right"
+                        : "   btn border-white font-bold text-right"
                     }
                   >
                     Log Out
