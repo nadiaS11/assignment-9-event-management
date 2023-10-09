@@ -1,5 +1,4 @@
-import React, { useContext } from "react";
-import PropTypes from "prop-types";
+import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "./../Authentications/AuthProvider";
 import { ToastContainer, toast } from "react-toastify";
@@ -15,7 +14,12 @@ const LogIn = () => {
     const email = e.target.email.value;
     const password = e.target.password.value;
     console.log(email, password);
-
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      return toast("Enter a valid email address.");
+    }
+    if (!/^(?=.*?[!@#$&*~])(?=.*[A-Z]).{6,}$/.test(password)) {
+      return toast("Password invalid.");
+    }
     loginUser(email, password)
       .then((result) => {
         console.log(result.user);
@@ -27,10 +31,23 @@ const LogIn = () => {
         toast(err.message);
       });
   };
+
+  const handleGoogleLogin = () => {
+    googleLogin()
+      .then((result) => {
+        console.log(result.user);
+        toast("Login by Google successful.");
+        navigate(location?.state ? location.state : "/");
+      })
+      .catch((err) => {
+        console.log(err.message);
+        toast(err.message);
+      });
+  };
   return (
     <div>
       <ToastContainer limit={1}></ToastContainer>
-      <section className="pt-10 md:pt-24    ">
+      <section className="pt-10     ">
         <div className="flex flex-col items-center pt-40 px-6  mx-auto md:h-screen lg:py-0 ">
           <div className="w-full bg-gray-300 rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0    ">
             <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
@@ -94,30 +111,30 @@ const LogIn = () => {
                     Forgot password?
                   </Link>
                 </div>
-                <div className="flex flex-col gap-5">
-                  <button
-                    type="submit"
-                    className="w-full text-white bg-gray-900 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center  "
-                  >
-                    Sign in
-                  </button>
-                  <button
-                    onClick={googleLogin}
-                    className="text-gray-900 border border-gray-900 hover:bg-gray-400 hover:text-white focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center "
-                  >
-                    Sign In With Google
-                  </button>
-                </div>
+
+                <button
+                  type="submit"
+                  className="w-full text-white bg-gray-900 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center  "
+                >
+                  Sign in
+                </button>
+
                 <p className="text-sm font-light text-gray-500 dark:text-gray-400 py-6">
                   Don’t have an account yet?
                   <Link
                     to="/register"
-                    className="font-medium text-blue-600 hover:underline dark:text-blue-500 ml-2 "
+                    className="font-medium  text-blue-600 hover:underline dark:text-blue-500 ml-2 "
                   >
                     Sign up
                   </Link>
                 </p>
               </form>
+              <button
+                onClick={handleGoogleLogin}
+                className="text-gray-900  border border-gray-900 hover:bg-gray-400 hover:text-white focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center "
+              >
+                Sign In With Google
+              </button>
             </div>
           </div>
         </div>

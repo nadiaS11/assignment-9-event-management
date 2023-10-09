@@ -9,6 +9,18 @@ const Register = () => {
   const navigate = useNavigate();
   const { createUser, googleLogin } = useContext(AuthContext);
 
+  const handleGoogleLogin = () => {
+    googleLogin()
+      .then((result) => {
+        console.log(result.user);
+        toast("Login by Google successful.");
+        navigate(location?.state ? location.state : "/");
+      })
+      .catch((err) => {
+        console.log(err.message);
+        toast(err.message);
+      });
+  };
   const handleRegister = (e) => {
     e.preventDefault();
     const name = e.target.name.value;
@@ -152,23 +164,23 @@ const Register = () => {
                   >
                     Register new account
                   </button>
-                  <button
-                    onClick={googleLogin}
-                    className="text-gray-900 border border-gray-900 hover:bg-gray-400 hover:text-white focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center "
-                  >
-                    Sign Up With Google
-                  </button>
                 </div>
-                <p className="text-sm font-light text-gray-500 dark:text-gray-400 py-6">
-                  Already have an account yet?
-                  <Link
-                    to="/login"
-                    className="font-medium text-blue-600 hover:underline dark:text-blue-500 ml-2  "
-                  >
-                    Sign In
-                  </Link>
-                </p>
               </form>
+              <button
+                onClick={handleGoogleLogin}
+                className="text-gray-900 w-full border border-gray-900 hover:bg-gray-400 hover:text-white focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center "
+              >
+                Sign Up With Google
+              </button>
+              <p className="text-sm font-light text-gray-500 dark:text-gray-400 py-6">
+                Already have an account yet?
+                <Link
+                  to="/login"
+                  className="font-medium text-blue-600 hover:underline dark:text-blue-500 ml-2  "
+                >
+                  Sign In
+                </Link>
+              </p>
             </div>
           </div>
         </div>
