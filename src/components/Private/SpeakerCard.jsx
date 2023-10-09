@@ -36,6 +36,8 @@ const SpeakerCard = ({ speaker }) => {
   );
 };
 
-SpeakerCard.propTypes = {};
+SpeakerCard.propTypes = {
+  speaker: PropTypes.object,
+};
 
 export default SpeakerCard;

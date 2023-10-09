@@ -4,11 +4,13 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../Authentications/AuthProvider";
 const Header = () => {
   const { user, loading, logOut } = useContext(AuthContext);
-
+  // console.log(user, "from header");
   const handleLogOut = () => {
     logOut();
   };
   const [open, setOpen] = useState(false);
+  const [profileLogOut, setProfileLogOut] = useState(false);
+
   return (
     <div className=" relative z-40 bg-black">
       <nav className="flex py-3   items-center justify-between container mx-auto">
@@ -77,17 +79,40 @@ const Header = () => {
               Log In
             </NavLink>
           ) : (
-            <NavLink
-              onClick={handleLogOut}
-              to={"/login"}
-              className={({ isActive }) =>
-                isActive
-                  ? "     btn     font-bold"
-                  : "  text-white   border-white  btn-ghost btn font-bold "
-              }
+            <div
+              onClick={() => setProfileLogOut(!profileLogOut)}
+              className="flex gap-2 items-center  "
             >
-              Log Out
-            </NavLink>
+              <img
+                className="w-12 h-12 rounded-full"
+                src={user?.photoURL ? user.photoURL : "/user.png"}
+                alt=""
+              />
+              <div>
+                <h4 className="text-white  btn-ghost btn font-bold ">
+                  {user?.displayName ? user.displayName : ""}
+                </h4>
+                <h4
+                  onClick={() => setProfileLogOut(!profileLogOut)}
+                  className={`${
+                    profileLogOut ? "absolute top-20" : " absolute -top-60"
+                  }`}
+                >
+                  {" "}
+                  <NavLink
+                    onClick={handleLogOut}
+                    to={"/login"}
+                    className={({ isActive }) =>
+                      isActive
+                        ? "     btn     font-bold"
+                        : "  text-white   border-white  btn-ghost btn font-bold text-right"
+                    }
+                  >
+                    Log Out
+                  </NavLink>
+                </h4>
+              </div>
+            </div>
           )}
         </div>
       </nav>

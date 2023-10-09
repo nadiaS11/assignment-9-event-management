@@ -8,7 +8,7 @@ import Customers from "./Customers";
 
 const Home = (props) => {
   const services = useLoaderData();
-  console.log(services);
+  // console.log(services);
   const { user } = useContext(AuthContext);
   return (
     <div>
