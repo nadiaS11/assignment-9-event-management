@@ -71,20 +71,16 @@ const Header = () => {
         </div>
         <div className="order-3">
           {!user ? (
-            !loading ? (
-              <NavLink
-                className={({ isActive }) =>
-                  isActive
-                    ? "btn font-bold"
-                    : "text-white border-white  btn-ghost btn font-bold "
-                }
-                to={"/login"}
-              >
-                Log In
-              </NavLink>
-            ) : (
-              ""
-            )
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? "btn font-bold"
+                  : "text-white border-white  btn-ghost btn font-bold "
+              }
+              to={"/login"}
+            >
+              Log In
+            </NavLink>
           ) : (
             <div className="flex gap-2 items-center  ">
               <CgProfile
