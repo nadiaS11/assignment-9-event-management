@@ -18,19 +18,29 @@ const Footer = () => {
         </p>
         <ul className="flex flex-wrap justify-center items-center mb-6  text-white">
           <li>
-            <Link className="mr-4 hover:underline md:mr-6 ">Home</Link>
+            <Link to={"/"} className="mr-4 hover:underline md:mr-6 ">
+              Home
+            </Link>
           </li>
           <li>
-            <Link className="mr-4 hover:underline md:mr-6">Gallery</Link>
+            <Link to={"/gallery"} className="mr-4 hover:underline md:mr-6">
+              Gallery
+            </Link>
           </li>
           <li>
-            <Link className="mr-4 hover:underline md:mr-6 ">Our Speakers</Link>
+            <Link to={"/speakers"} className="mr-4 hover:underline md:mr-6 ">
+              Our Speakers
+            </Link>
           </li>
           <li>
-            <Link className="mr-4 hover:underline md:mr-6">Register</Link>
+            <Link to={"/register"} className="mr-4 hover:underline md:mr-6">
+              Register
+            </Link>
           </li>
           <li>
-            <Link className="mr-4 hover:underline md:mr-6">Login</Link>
+            <Link to={"/login"} className="mr-4 hover:underline md:mr-6">
+              Login
+            </Link>
           </li>
         </ul>
         <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
