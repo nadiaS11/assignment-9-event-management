@@ -1,17 +1,15 @@
 import React, { useContext } from "react";
 import PropTypes from "prop-types";
-import { AuthContext } from "../Authentications/AuthProvider";
 import Banner from "./Banner";
-import { Link, useLoaderData } from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
 import Service from "./Service";
 import Customers from "./Customers";
-import Testimonial from "./Testimonial";
 import TestimonialCard from "./TestimonialCard";
 
 const Home = () => {
   const services = useLoaderData();
   // console.log(services);
-  const { user } = useContext(AuthContext);
+
   return (
     <div>
       <Banner></Banner>

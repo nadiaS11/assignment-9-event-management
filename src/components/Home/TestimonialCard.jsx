@@ -10,7 +10,7 @@ const TestimonialCard = ({ service }) => {
       {client_testimonials?.map((testimonial, idx) => (
         <blockquote
           key={idx}
-          className="rounded-lg w-[35vw] bg-gray-50 p-6 shadow-sm sm:p-8"
+          className="rounded-lg w-full md:w-[35vw] bg-gray-50 p-6 shadow-sm sm:p-8"
         >
           <div className="flex items-center gap-4">
             <img

@@ -18,31 +18,23 @@ const Footer = () => {
         </p>
         <ul className="flex flex-wrap justify-center items-center mb-6  text-white">
           <li>
-            <Link className="mr-4 hover:underline md:mr-6 ">About</Link>
+            <Link className="mr-4 hover:underline md:mr-6 ">Home</Link>
           </li>
           <li>
-            <Link className="mr-4 hover:underline md:mr-6">Premium</Link>
+            <Link className="mr-4 hover:underline md:mr-6">Gallery</Link>
           </li>
           <li>
-            <Link className="mr-4 hover:underline md:mr-6 ">Campaigns</Link>
+            <Link className="mr-4 hover:underline md:mr-6 ">Our Speakers</Link>
           </li>
           <li>
-            <Link className="mr-4 hover:underline md:mr-6">Blog</Link>
+            <Link className="mr-4 hover:underline md:mr-6">Register</Link>
           </li>
           <li>
-            <Link className="mr-4 hover:underline md:mr-6">
-              Affiliate Program
-            </Link>
-          </li>
-          <li>
-            <Link className="mr-4 hover:underline md:mr-6">FAQs</Link>
-          </li>
-          <li>
-            <Link className="mr-4 hover:underline md:mr-6">Contact</Link>
+            <Link className="mr-4 hover:underline md:mr-6">Login</Link>
           </li>
         </ul>
         <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-          © 2021-2022 <Link className="hover:underline">Flowbite™</Link>. All
+          © 2022-2023 <Link className="hover:underline">The Mingle™</Link>. All
           Rights Reserved.
         </span>
       </div>
